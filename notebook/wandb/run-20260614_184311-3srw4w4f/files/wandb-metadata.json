@@ -1,0 +1,28 @@
+{
+  "os": "Windows-10-10.0.26200-SP0",
+  "python": "CPython 3.10.11",
+  "startedAt": "2026-06-14T13:13:11.636525Z",
+  "program": "c:\\Users\\ASUS\\OneDrive\\Desktop\\lung_disease_digonosis\\notebook\\Experiment.ipynb",
+  "codePath": "c:\\Users\\ASUS\\OneDrive\\Desktop\\lung_disease_digonosis\\notebook\\Experiment.ipynb",
+  "codePathLocal": "Experiment.ipynb",
+  "git": {
+    "remote": "https://github.com/vicky060403/Lungs_Disease_Digonosis.git",
+    "commit": "26a5668bc0d8588acd8215cc9a54534baa965963"
+  },
+  "email": "vk0099678@gmail.com",
+  "root": "c:\\Users\\ASUS\\OneDrive\\Desktop\\lung_disease_digonosis\\notebook",
+  "host": "Vickypandey123",
+  "executable": "c:\\Users\\ASUS\\OneDrive\\Desktop\\lung_disease_digonosis\\.venv\\Scripts\\python.exe",
+  "cpu_count": 8,
+  "cpu_count_logical": 16,
+  "disk": {
+    "/": {
+      "total": "194470285312",
+      "used": "153015459840"
+    }
+  },
+  "memory": {
+    "total": "16541728768"
+  },
+  "writerId": "pkmlrm1dls1vm5664ktujr72sqcuc8xh"
+}

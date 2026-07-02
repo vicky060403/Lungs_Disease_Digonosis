@@ -25,6 +25,7 @@ class DataIngestionConfig: # Stores paths related to downloading data.
 @dataclass
 class DataTransformationConfig: # stores the datatransfomation hard coded value
     def __init__(self):
+        # use ** to unpack the dictionary and pass the values as keyword arguments to the ColorJitter transform.
         self.color_jitter_transforms: dict = {
             "brightness": BRIGHTNESS,
             "contrast": CONTRAST,
@@ -37,15 +38,21 @@ class DataTransformationConfig: # stores the datatransfomation hard coded value
         self.CENTERCROP: int = CENTERCROP
 
         self.RANDOMROTATION: int = RANDOMROTATION
-
+        # Use ** to unpack the dictionary and pass the values as keyword arguments to the Normalize transform.
         self.normalize_transforms: dict = {
             "mean": NORMALIZE_LIST_1,
             "std": NORMALIZE_LIST_2,
         }
 
-        self.data_loader_params: dict = {
+        self.train_data_loader_params: dict = {
             "batch_size": BATCH_SIZE,
             "shuffle": SHUFFLE,
+            "pin_memory": PIN_MEMORY,
+        }
+
+        self.test_data_loader_params: dict = {
+            "batch_size": BATCH_SIZE,
+            "shuffle": False,
             "pin_memory": PIN_MEMORY,
         }
 
@@ -93,15 +100,7 @@ class ModelTrainerConfig:
 class ModelEvaluationConfig:
     def __init__(self):
         self.device: device = DEVICE
-
-        self.test_loss: float = 0.0
-
-        self.test_accuracy: float = 0.0
-
-        self.total: int = 0
-
-        self.total_batch: int = 0
-
+        
         self.optimizer_params: dict = {"lr": 0.001}
 
 

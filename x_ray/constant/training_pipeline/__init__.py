@@ -67,3 +67,7 @@ BENTOML_ECR_IMAGE: str = "xray_bento_image" # Docker image name for deployment.
 
 # Prediction Labels: used after training
 PREDICTION_LABEL: dict = {0: CLASS_LABEL_1, 1: CLASS_LABEL_2}
+
+# AWS ECR Configuration: used for mlops
+AWS_ACCOUNT_ID: str = "851236939228"
+AWS_REGION: str = "ap-southeast-2"

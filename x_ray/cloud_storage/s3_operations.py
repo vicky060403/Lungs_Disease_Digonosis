@@ -6,13 +6,13 @@ from x_ray.exception import XRayException
 # create class of S3-Bucket operation to run S3Operation together
 class S3Operation:
     # Upload Folder to S3
-    # bucket_name = "lung-disease-models"
+    # bucket_name = "lungxray"
     def sync_folder_to_s3(self, folder: str, bucket_name: str, bucket_folder_name: str) -> None:
         try:
             # Build AWS command
             """
                 folder = "artifacts"
-                bucket_name = "lung-disease-models"
+                bucket_name = "lungxray"
                 bucket_folder_name = "model_registry"
             """
             command: str = (
